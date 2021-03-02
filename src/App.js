@@ -44,7 +44,7 @@ export default function App() {
 	return (
 		<div className="App">
 			<header className="header">Know Your Country</header>
-			{isLoading?<h1>Loading...</h1>:(
+			{isLoading?<div className="loading">Loading...</div>:(
 				<div className="container">
 				<Search getQuery={(query) => setQuery(query)} />
 				
