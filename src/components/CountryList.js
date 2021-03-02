@@ -2,7 +2,7 @@ import React from "react";
 const CountryList = ({ countryData, regions }) => {
 	return (
 		<div className="country-list">
-			{countryData
+			{ countryData.length>0  && countryData
 				.filter((elem) => elem.region === regions)
 				.slice(0, 15)
 				.map(({ name, capital, flag, subregion, population }) => (
