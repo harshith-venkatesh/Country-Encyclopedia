@@ -1,0 +1,26 @@
+{
+	"short_name": "Know Your Country",
+	"name": "Do you Know more about Your Country",
+	"theme_color": "#000000",
+	"background_color": "#000000",
+	"display": "standalone",
+	"scope": "/",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "favico.ico",
+			"sizes": "64x64 32x32 24x24 16x16",
+			"types": "image/x-icon"
+		},
+		{
+			"src": "/images/icons/icon-192x192.jpg",
+			"type": "image/jpg",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/images/icons/icon-512x512.jpg",
+			"type": "image/jpg",
+			"sizes": "512x512"
+		}
+	]
+}
