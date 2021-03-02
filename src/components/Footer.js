@@ -8,14 +8,14 @@ const Footer = () => {
 			<div className="sm-footer">
 				<a
 					href="https://www.instagram.com/harshith_bing/"
-					rel="noreferrer"
+					rel="noopener noreferrer"
 					target="_blank"
 				>
 					<i className="fab fa-instagram"></i>
 				</a>
 				<a
 					href="https://twitter.com/Harshith_V007"
-					rel="noreferrer"
+					rel="noopener noreferrer"
 					target="_blank"
 				>
 					<i className="fab fa-twitter"></i>
@@ -26,7 +26,7 @@ const Footer = () => {
 
 				<a
 					href="https://medium.com/@harshithvenkatesh"
-					rel="noreferrer"
+					rel="noopener noreferrer"
 					target="_blank"
 				>
 					<i className="fab fa-medium"></i>
@@ -34,7 +34,7 @@ const Footer = () => {
 
 				<a
 					href="https://www.linkedin.com/in/harshithvenkatesh/"
-					rel="noreferrer"
+					rel="noopener noreferrer"
 					target="_blank"
 				>
 					<i className="fab fa-linkedin"></i>

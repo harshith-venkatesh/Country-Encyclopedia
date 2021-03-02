@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CountryList from "./components/CountryList";
 import Footer from "./components/Footer";
-import Pagination from "./components/Pagination";
 import Search from "./components/Search";
 import "./styles.css";
 //import restDB from "./db/restCountries.json";
