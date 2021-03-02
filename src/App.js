@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import CountryList from "./components/CountryList";
+import Footer from "./components/Footer";
+import Pagination from "./components/Pagination";
+import Search from "./components/Search";
 import "./styles.css";
 //import restDB from "./db/restCountries.json";
 
@@ -27,15 +31,17 @@ export default function App() {
 		}
 
 		getCountries();
-	}, []);
+	}, [query]);
 
 	const regionSelector = (region) => {
 		setRegions(region);
 	};
+
 	return (
 		<div className="App">
 			<header className="header">Know Your Country</header>
 			<div className="container">
+				<Search getQuery={(query) => setQuery(query)} />
 				<ul className="list-region">
 					{continentRegion
 						.filter((elem) => elem !== "Polar" && elem.length > 0)
@@ -53,76 +59,9 @@ export default function App() {
 				</ul>
 				<br />
 
-				<div className="country-list">
-					{countryData
-						.filter((elem) => elem.region === regions)
-						.slice(0, 12)
-						.map(({ name, capital, flag, subregion, population }) => (
-							<div key={flag}>
-								<div className="country-flag-card">
-									<img className="country-flag-image" src={flag} alt={flag} />
-									<div className="country-details">
-										<span className="country-name">{name}</span>
-										<div>
-											{" "}
-											<span>Capital: </span>{" "}
-											<span className="country-subheading">{capital}</span>
-										</div>
-										<div>
-											{" "}
-											<span>Sub Region: </span>{" "}
-											<span className="country-subheading">{subregion}</span>
-										</div>
-										<div>
-											{" "}
-											<span>Population: </span>{" "}
-											<span className="country-subheading">{population}</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						))}
-				</div>
+				<CountryList countryData={countryData} regions={regions} />
 			</div>
-			<footer className="footer">
-				<div className="footer-header">Connect with me</div>
-				Made with ❤ by Harshith Venkatesh
-				<div className="sm-footer">
-					<a
-						href="https://www.instagram.com/harshith_bing/"
-						rel="noreferrer"
-						target="_blank"
-					>
-						<i className="fab fa-instagram"></i>
-					</a>
-					<a
-						href="https://twitter.com/Harshith_V007"
-						rel="noreferrer"
-						target="_blank"
-					>
-						<i className="fab fa-twitter"></i>
-					</a>
-					<a href="https://github.com/harshith-venkatesh">
-						<i className="fab fa-github"></i>
-					</a>
-
-					<a
-						href="https://medium.com/@harshithvenkatesh"
-						rel="noreferrer"
-						target="_blank"
-					>
-						<i className="fab fa-medium"></i>
-					</a>
-
-					<a
-						href="https://www.linkedin.com/in/harshithvenkatesh/"
-						rel="noreferrer"
-						target="_blank"
-					>
-						<i className="fab fa-linkedin"></i>
-					</a>
-				</div>
-			</footer>
+			<Footer />
 		</div>
 	);
 }
