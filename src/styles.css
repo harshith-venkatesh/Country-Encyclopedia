@@ -1,202 +1,204 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
-	margin: 0 0;
-	padding: 0 0;
-	font-family: Lato;
+  margin: 0 0;
+  padding: 0 0;
+  font-family: Lato;
 }
 
 :root {
-	--primary-color: #c7d2fe;
-	--header-color: #4338ca;
-	--light-grey: #f3f4f6;
-	--light-red: #fee2e2;
+  --primary-color: #c7d2fe;
+  --header-color: #4338ca;
+  --light-grey: #f3f4f6;
+  --light-red: #fee2e2;
 }
 body {
-	/* background-image: url("https://elements-cover-images-0.imgix.net/6ebef0a3-2a18-4e0d-8dd4-8473115f531b?auto=compress%2Cformat&fit=max&w=1019&s=f081170798958382b5b7f62d85fbf8ba"); */
-	background: url("https://images.unsplash.com/photo-1535498730771-e735b998cd64?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
-	background-color: #eee;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  /* background-image: url("https://elements-cover-images-0.imgix.net/6ebef0a3-2a18-4e0d-8dd4-8473115f531b?auto=compress%2Cformat&fit=max&w=1019&s=f081170798958382b5b7f62d85fbf8ba"); */
+  background: url("https://images.unsplash.com/photo-1535498730771-e735b998cd64?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+  background-color: #eee;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow-x: hidden;
 }
 .App {
-	font-family: sans-serif;
-	text-align: center;
+  font-family: sans-serif;
+  text-align: center;
 }
 
 .header {
-	padding: 1rem 2rem;
-	font-size: 1.2rem;
-	width: 100%;
-	background-color: var(--header-color);
-	font-weight: 700;
-	color: white;
-	display: flex;
-	justify-content: center;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  width: 100%;
+  background-color: var(--header-color);
+  font-weight: 700;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .container {
-	max-width: 600px;
-	margin: auto;
+  max-width: 600px;
+  margin: auto;
 }
 
 .list-region-inline {
-	margin: 0.2rem 0.2rem;
+  margin: 0.2rem 0.2rem;
 }
 
 .list-region {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0rem auto 2rem auto;
-	padding: 1rem 1rem;
-	list-style-type: none;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem auto 2rem auto;
+  padding: 1rem 1rem;
+  list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .country-list {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	padding: 1rem 1rem;
-	margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem 1rem;
+  margin: auto;
 }
 
 .country-flag-card {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 12rem;
-	/* min-height: 19rem; */
-	border-radius: 10px;
-	margin: 2rem auto;
-	background-color: var(--light-red);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 12rem;
+  /* min-height: 19rem; */
+  border-radius: 10px;
+  margin: 2rem auto;
+  background-color: var(--light-red);
 }
 .country-flag-image {
-	display: flex;
-	justify-content: center;
-	width: 12rem;
-	height: 12rem;
-	height: 8rem;
-	margin-top: 0rem;
-	object-fit: cover;
-	border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  width: 12rem;
+  height: 12rem;
+  height: 8rem;
+  margin-top: 0rem;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .region-button {
-	width: 6rem;
-	background: #1f2937;
-	position: relative;
-	border-radius: 32px;
-	text-align: center;
-	cursor: pointer;
+  width: 6rem;
+  background: #1f2937;
+  position: relative;
+  border-radius: 32px;
+  text-align: center;
+  cursor: pointer;
 }
 .region-button span {
-	line-height: 2rem;
-	font-family: "Montserrat", sans-serif;
-	font-size: 1.2rem;
-	font-weight: semibold;
-	color: #fff;
+  line-height: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: semibold;
+  color: #fff;
 }
 
 .country-details {
-	padding: 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .country-name {
-	font-size: 1rem;
-	font-weight: 700;
-	margin-bottom: 0.4rem;
-	display: flex;
-	justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  display: flex;
+  justify-content: center;
 }
 
 span {
-	font-size: 0.7rem;
+  font-size: 0.7rem;
 }
 
 .country-subheading {
-	font-size: 0.8rem;
-	color: var(--header-color);
-	font-weight: bold;
+  font-size: 0.8rem;
+  color: var(--header-color);
+  font-weight: bold;
 }
 
 .footer {
-	/* position: fixed;
+  /* position: fixed;
   bottom: 0; */
-	width: 100%;
-	padding: 0.5rem 2rem;
-	font-size: 1rem;
-	background-color: var(--header-color);
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	color: #fff;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background-color: var(--header-color);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #fff;
 }
 
 .sm-footer {
-	display: flex;
-	justify-content: center;
-	font-size: 2rem;
-	font-family: "Roboto Slab", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: "Roboto Slab", sans-serif;
 }
 
 .sm-footer a,
 .sm-footer a:visited {
-	color: white;
-	text-decoration: none;
-	padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
 }
 
 /*   */
 .search {
-	height: 70px;
-	margin-top: 0;
+  height: 70px;
+  margin-top: 0;
 }
 
 input[type="text"] {
-	background-color: rgb(218, 207, 207);
-	display: block;
-	padding: 10px;
-	font-size: 16px;
-	border: 0;
-	border-radius: 5px;
-	width: 60%;
-	margin: 2rem auto 0rem auto;
+  background-color: rgb(218, 207, 207);
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  width: 60%;
+  margin: 2rem auto 0rem auto;
 }
 
 /* Pagination */
 .pagination-a {
-	display: inline-block;
-	margin: auto;
-	justify-content: center;
-	text-align: center;
+  display: inline-block;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
 }
 
 .nav-margin {
-	margin: auto;
-	margin-top: 10px;
+  margin: auto;
+  margin-top: 10px;
 }
 
 .pagination-a button {
-	color: black;
-	float: left;
-	padding: 8px 16px;
-	margin: auto 8px;
-	text-decoration: none;
-	border: none;
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  margin: auto 8px;
+  text-decoration: none;
+  border: none;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .loading {
-	height: 100vh;
-	width: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
